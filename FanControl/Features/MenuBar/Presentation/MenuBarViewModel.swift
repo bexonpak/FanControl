@@ -77,16 +77,16 @@ class MenuBarViewModel: ObservableObject {
     guard FileManager.default.fileExists(atPath: bundleHelperPath) else { return }
     
     let shellCmd = "mkdir -p '\(persistentHelperDir)' && cp -f '\(bundleHelperPath)' '\(helperPath)' && chown root:wheel '\(helperPath)' && chmod +s '\(helperPath)'"
-    let task = Process()
-    task.executableURL = URL(fileURLWithPath: "/usr/bin/osascript")
-    task.arguments = ["-e", "do shell script \"\(shellCmd)\" with administrator privileges"]
+    let scriptSource = "do shell script \"\(shellCmd)\" with administrator privileges"
     
-    do {
-      try task.run()
-      task.waitUntilExit()
-      isAuthorized = task.terminationStatus == 0
-    } catch {
-      print("Authorization failed: \(error)")
+    if let script = NSAppleScript(source: scriptSource) {
+      var error: NSDictionary?
+      script.executeAndReturnError(&error)
+      if error == nil {
+        isAuthorized = true
+      } else {
+        print("Authorization failed: \(error?["NSAppleScriptErrorMessage"] ?? "unknown error")")
+      }
     }
   }
   
