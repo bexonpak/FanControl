@@ -28,8 +28,8 @@ class MenuBarController: NSObject, NSMenuDelegate {
     viewModel.stopMonitoring()
     if let item = statusItem {
       NSStatusBar.system.removeStatusItem(item)
+      statusItem = nil
     }
-    statusItem = nil
   }
   
   private func setupStatusItemImage() {
@@ -147,6 +147,10 @@ class MenuBarController: NSObject, NSMenuDelegate {
   
   @objc private func quitApp() {
     viewModel.stopMonitoring()
+    if let item = statusItem {
+      NSStatusBar.system.removeStatusItem(item)
+    }
+    statusItem = nil
     NSApplication.shared.terminate(nil)
   }
 }

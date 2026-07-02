@@ -3,8 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 110;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		07D81B710253C72A36EB9BA9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91A3C39101A182232E5011F /* main.swift */; };
+		3C01CC7EB0760E1A7BEBF806 /* SMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A0492577A9AB29FC4FC78C /* SMC.swift */; };
+		4775C24C4061FB231B65CAFD /* FanMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B6059A9979CA2E05CE061 /* FanMode.swift */; };
+		5C994F177228C6C124CEF2BC /* SMCExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69D374862B51843CB9A2BEA /* SMCExtensions.swift */; };
+		6D8A6CB0406CA773FC48F13E /* SMCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AD8448D156CDCA8BF4ACA2 /* SMCService.swift */; };
+		E0A67FBD62865A252CAF25C3 /* SMCTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EE212EA93E3D3138EC13D4 /* SMCTypes.swift */; };
+		FC117335677E19283AEFEF3D /* smc-helper in Copy smc-helper */ = {isa = PBXBuildFile; fileRef = 367AE8A372031EFB3ABF6827 /* smc-helper */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		444DF7EB2FEAC5A100F9B487 /* PBXContainerItemProxy */ = {
@@ -21,47 +31,84 @@
 			remoteGlobalIDString = 444DF7DB2FEAC5A000F9B487;
 			remoteInfo = FanControl;
 		};
+		4D152F7F7AEB0E3D7570C93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 444DF7D42FEAC5A000F9B487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA2B07E6B49063A559AC7190;
+			remoteInfo = "smc-helper";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D22755836BE662B5D6124814 /* Copy smc-helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				FC117335677E19283AEFEF3D /* smc-helper in Copy smc-helper */,
+			);
+			name = "Copy smc-helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0D4007B7BA8A491059B3E3DE /* SMCTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMCTypes.swift; path = FanControl/Services/SMC/SMCTypes.swift; sourceTree = "<group>"; };
+		10EE212EA93E3D3138EC13D4 /* SMCTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMCTypes.swift; path = FanControl/Services/SMC/SMCTypes.swift; sourceTree = SOURCE_ROOT; };
+		181A0A29CDA3BCF5B070E492 /* SMC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMC.swift; path = FanControl/Services/SMC/SMC.swift; sourceTree = "<group>"; };
+		346775ED987821F49059753B /* SMCExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMCExtensions.swift; path = FanControl/Services/SMC/SMCExtensions.swift; sourceTree = "<group>"; };
+		367AE8A372031EFB3ABF6827 /* smc-helper */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = text; path = "smc-helper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C494C0AA479EA9EF1FAAFC5 /* SMCService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMCService.swift; path = FanControl/Services/SMC/SMCService.swift; sourceTree = "<group>"; };
+		434B6059A9979CA2E05CE061 /* FanMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FanMode.swift; path = FanControl/Models/FanMode.swift; sourceTree = SOURCE_ROOT; };
 		444DF7DC2FEAC5A000F9B487 /* FanControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		444DF7EA2FEAC5A100F9B487 /* FanControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		444DF7F42FEAC5A100F9B487 /* FanControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B7922026E8B64C30CE6B84 /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = main.swift; path = Helper/main.swift; sourceTree = "<group>"; };
+		58B60CC9036846FC600BFFCC /* FanMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FanMode.swift; path = FanControl/Models/FanMode.swift; sourceTree = "<group>"; };
+		64A0492577A9AB29FC4FC78C /* SMC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMC.swift; path = FanControl/Services/SMC/SMC.swift; sourceTree = SOURCE_ROOT; };
+		79589EBDFA4CCE99965514B8 /* smc-helper */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = text; path = "smc-helper"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AD8448D156CDCA8BF4ACA2 /* SMCService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMCService.swift; path = FanControl/Services/SMC/SMCService.swift; sourceTree = SOURCE_ROOT; };
+		B91A3C39101A182232E5011F /* main.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = main.swift; path = Helper/main.swift; sourceTree = SOURCE_ROOT; };
+		C69D374862B51843CB9A2BEA /* SMCExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SMCExtensions.swift; path = FanControl/Services/SMC/SMCExtensions.swift; sourceTree = SOURCE_ROOT; };
+		DD5EA847A8555E0AB2397435 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		444DF7DE2FEAC5A000F9B487 /* FanControl */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FanControl;
-			sourceTree = "<group>";
-		};
-		444DF7ED2FEAC5A100F9B487 /* FanControlTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FanControlTests;
-			sourceTree = "<group>";
-		};
-		444DF7F72FEAC5A100F9B487 /* FanControlUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FanControlUITests;
-			sourceTree = "<group>";
-		};
+		444DF7DE2FEAC5A000F9B487 /* FanControl */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FanControl; sourceTree = "<group>"; };
+		444DF7ED2FEAC5A100F9B487 /* FanControlTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FanControlTests; sourceTree = "<group>"; };
+		444DF7F72FEAC5A100F9B487 /* FanControlUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = FanControlUITests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		444DF7D92FEAC5A000F9B487 /* Frameworks */ = {
+		3A0F1AF8932BB5167E2841F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		444DF7D92FEAC5A000F9B487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		444DF7E72FEAC5A100F9B487 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		444DF7F12FEAC5A100F9B487 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
@@ -73,6 +120,14 @@
 				444DF7ED2FEAC5A100F9B487 /* FanControlTests */,
 				444DF7F72FEAC5A100F9B487 /* FanControlUITests */,
 				444DF7DD2FEAC5A000F9B487 /* Products */,
+				E83830654C8D3F184E70A8E9 /* Frameworks */,
+				50B7922026E8B64C30CE6B84 /* main.swift */,
+				58B60CC9036846FC600BFFCC /* FanMode.swift */,
+				0D4007B7BA8A491059B3E3DE /* SMCTypes.swift */,
+				3C494C0AA479EA9EF1FAAFC5 /* SMCService.swift */,
+				346775ED987821F49059753B /* SMCExtensions.swift */,
+				181A0A29CDA3BCF5B070E492 /* SMC.swift */,
+				D0E66EA0D8BFE2C760B7302E /* smc-helper */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,8 +137,39 @@
 				444DF7DC2FEAC5A000F9B487 /* FanControl.app */,
 				444DF7EA2FEAC5A100F9B487 /* FanControlTests.xctest */,
 				444DF7F42FEAC5A100F9B487 /* FanControlUITests.xctest */,
+				79589EBDFA4CCE99965514B8 /* smc-helper */,
+				367AE8A372031EFB3ABF6827 /* smc-helper */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D0E66EA0D8BFE2C760B7302E /* smc-helper */ = {
+			isa = PBXGroup;
+			children = (
+				B91A3C39101A182232E5011F /* main.swift */,
+				434B6059A9979CA2E05CE061 /* FanMode.swift */,
+				10EE212EA93E3D3138EC13D4 /* SMCTypes.swift */,
+				B8AD8448D156CDCA8BF4ACA2 /* SMCService.swift */,
+				C69D374862B51843CB9A2BEA /* SMCExtensions.swift */,
+				64A0492577A9AB29FC4FC78C /* SMC.swift */,
+			);
+			name = "smc-helper";
+			sourceTree = SOURCE_ROOT;
+		};
+		E31FA1147A4BA3EB12A8D871 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				DD5EA847A8555E0AB2397435 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		E83830654C8D3F184E70A8E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E31FA1147A4BA3EB12A8D871 /* OS X */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,13 +182,19 @@
 				444DF7D82FEAC5A000F9B487 /* Sources */,
 				444DF7D92FEAC5A000F9B487 /* Frameworks */,
 				444DF7DA2FEAC5A000F9B487 /* Resources */,
+				D22755836BE662B5D6124814 /* Copy smc-helper */,
 			);
 			buildRules = (
+			);
+			dependencies = (
+				4831EDEF30A5719011681688 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				444DF7DE2FEAC5A000F9B487 /* FanControl */,
 			);
 			name = FanControl;
+			packageProductDependencies = (
+			);
 			productName = FanControl;
 			productReference = 444DF7DC2FEAC5A000F9B487 /* FanControl.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +216,8 @@
 				444DF7ED2FEAC5A100F9B487 /* FanControlTests */,
 			);
 			name = FanControlTests;
+			packageProductDependencies = (
+			);
 			productName = FanControlTests;
 			productReference = 444DF7EA2FEAC5A100F9B487 /* FanControlTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -145,9 +239,29 @@
 				444DF7F72FEAC5A100F9B487 /* FanControlUITests */,
 			);
 			name = FanControlUITests;
+			packageProductDependencies = (
+			);
 			productName = FanControlUITests;
 			productReference = 444DF7F42FEAC5A100F9B487 /* FanControlUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BA2B07E6B49063A559AC7190 /* smc-helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04BAEDE8D9CFFCC3CB622D9 /* Build configuration list for PBXNativeTarget "smc-helper" */;
+			buildPhases = (
+				05240DDBEE287EDF8ADAA67D /* Sources */,
+				3A0F1AF8932BB5167E2841F6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "smc-helper";
+			packageProductDependencies = (
+			);
+			productName = "smc-helper";
+			productReference = 367AE8A372031EFB3ABF6827 /* smc-helper */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -173,6 +287,7 @@
 				};
 			};
 			buildConfigurationList = 444DF7D72FEAC5A000F9B487 /* Build configuration list for PBXProject "FanControl" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -181,7 +296,6 @@
 			);
 			mainGroup = 444DF7D32FEAC5A000F9B487;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 63;
 			productRefGroup = 444DF7DD2FEAC5A000F9B487 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -189,6 +303,7 @@
 				444DF7DB2FEAC5A000F9B487 /* FanControl */,
 				444DF7E92FEAC5A100F9B487 /* FanControlTests */,
 				444DF7F32FEAC5A100F9B487 /* FanControlUITests */,
+				BA2B07E6B49063A559AC7190 /* smc-helper */,
 			);
 		};
 /* End PBXProject section */
@@ -196,36 +311,61 @@
 /* Begin PBXResourcesBuildPhase section */
 		444DF7DA2FEAC5A000F9B487 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		444DF7E82FEAC5A100F9B487 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		444DF7F22FEAC5A100F9B487 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		05240DDBEE287EDF8ADAA67D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D81B710253C72A36EB9BA9 /* main.swift in Sources */,
+				4775C24C4061FB231B65CAFD /* FanMode.swift in Sources */,
+				E0A67FBD62865A252CAF25C3 /* SMCTypes.swift in Sources */,
+				6D8A6CB0406CA773FC48F13E /* SMCService.swift in Sources */,
+				5C994F177228C6C124CEF2BC /* SMCExtensions.swift in Sources */,
+				3C01CC7EB0760E1A7BEBF806 /* SMC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		444DF7D82FEAC5A000F9B487 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		444DF7E62FEAC5A100F9B487 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		444DF7F02FEAC5A100F9B487 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
@@ -240,10 +380,16 @@
 			target = 444DF7DB2FEAC5A000F9B487 /* FanControl */;
 			targetProxy = 444DF7F52FEAC5A100F9B487 /* PBXContainerItemProxy */;
 		};
+		4831EDEF30A5719011681688 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "smc-helper";
+			target = BA2B07E6B49063A559AC7190 /* smc-helper */;
+			targetProxy = 4D152F7F7AEB0E3D7570C93C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		444DF7FA2FEAC5A100F9B487 /* Debug configuration for PBXProject "FanControl" */ = {
+		444DF7FA2FEAC5A100F9B487 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,7 +453,7 @@
 			};
 			name = Debug;
 		};
-		444DF7FB2FEAC5A100F9B487 /* Release configuration for PBXProject "FanControl" */ = {
+		444DF7FB2FEAC5A100F9B487 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +509,7 @@
 			};
 			name = Release;
 		};
-		444DF7FD2FEAC5A100F9B487 /* Debug configuration for PBXNativeTarget "FanControl" */ = {
+		444DF7FD2FEAC5A100F9B487 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -400,7 +546,7 @@
 			};
 			name = Debug;
 		};
-		444DF7FE2FEAC5A100F9B487 /* Release configuration for PBXNativeTarget "FanControl" */ = {
+		444DF7FE2FEAC5A100F9B487 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -437,7 +583,7 @@
 			};
 			name = Release;
 		};
-		444DF8002FEAC5A100F9B487 /* Debug configuration for PBXNativeTarget "FanControlTests" */ = {
+		444DF8002FEAC5A100F9B487 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,7 +604,7 @@
 			};
 			name = Debug;
 		};
-		444DF8012FEAC5A100F9B487 /* Release configuration for PBXNativeTarget "FanControlTests" */ = {
+		444DF8012FEAC5A100F9B487 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,7 +625,7 @@
 			};
 			name = Release;
 		};
-		444DF8032FEAC5A100F9B487 /* Debug configuration for PBXNativeTarget "FanControlUITests" */ = {
+		444DF8032FEAC5A100F9B487 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -498,7 +644,7 @@
 			};
 			name = Debug;
 		};
-		444DF8042FEAC5A100F9B487 /* Release configuration for PBXNativeTarget "FanControlUITests" */ = {
+		444DF8042FEAC5A100F9B487 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -514,6 +660,37 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = FanControl;
+			};
+			name = Release;
+		};
+		46F1DB35DEE7D67EB0DAFF67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6Q22UVSYB;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bexonbai.FanControl.helper;
+				PRODUCT_NAME = "smc-helper";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEF14B150EBD0CEBDA204553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6Q22UVSYB;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bexonbai.FanControl.helper;
+				PRODUCT_NAME = "smc-helper";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -523,37 +700,49 @@
 		444DF7D72FEAC5A000F9B487 /* Build configuration list for PBXProject "FanControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				444DF7FA2FEAC5A100F9B487 /* Debug configuration for PBXProject "FanControl" */,
-				444DF7FB2FEAC5A100F9B487 /* Release configuration for PBXProject "FanControl" */,
+				444DF7FA2FEAC5A100F9B487 /* Debug */,
+				444DF7FB2FEAC5A100F9B487 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		444DF7FC2FEAC5A100F9B487 /* Build configuration list for PBXNativeTarget "FanControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				444DF7FD2FEAC5A100F9B487 /* Debug configuration for PBXNativeTarget "FanControl" */,
-				444DF7FE2FEAC5A100F9B487 /* Release configuration for PBXNativeTarget "FanControl" */,
+				444DF7FD2FEAC5A100F9B487 /* Debug */,
+				444DF7FE2FEAC5A100F9B487 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		444DF7FF2FEAC5A100F9B487 /* Build configuration list for PBXNativeTarget "FanControlTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				444DF8002FEAC5A100F9B487 /* Debug configuration for PBXNativeTarget "FanControlTests" */,
-				444DF8012FEAC5A100F9B487 /* Release configuration for PBXNativeTarget "FanControlTests" */,
+				444DF8002FEAC5A100F9B487 /* Debug */,
+				444DF8012FEAC5A100F9B487 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		444DF8022FEAC5A100F9B487 /* Build configuration list for PBXNativeTarget "FanControlUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				444DF8032FEAC5A100F9B487 /* Debug configuration for PBXNativeTarget "FanControlUITests" */,
-				444DF8042FEAC5A100F9B487 /* Release configuration for PBXNativeTarget "FanControlUITests" */,
+				444DF8032FEAC5A100F9B487 /* Debug */,
+				444DF8042FEAC5A100F9B487 /* Release */,
 			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04BAEDE8D9CFFCC3CB622D9 /* Build configuration list for PBXNativeTarget "smc-helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F1DB35DEE7D67EB0DAFF67 /* Debug */,
+				EEF14B150EBD0CEBDA204553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
 	rootObject = 444DF7D42FEAC5A000F9B487 /* Project object */;
-	validationLevel = 1;
 }
