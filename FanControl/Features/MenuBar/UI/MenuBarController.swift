@@ -7,6 +7,7 @@
 
 import Cocoa
 import Combine
+import ServiceManagement
 
 @MainActor
 class MenuBarController: NSObject, NSMenuDelegate {
@@ -100,6 +101,11 @@ class MenuBarController: NSObject, NSMenuDelegate {
       let resetItem = NSMenuItem(title: "Reset All", action: #selector(resetAll), keyEquivalent: "r")
       resetItem.target = self
       menu.addItem(resetItem)
+      
+      let launchItem = NSMenuItem(title: "Launch at Login", action: #selector(toggleLaunchAtLogin), keyEquivalent: "")
+      launchItem.target = self
+      launchItem.state = SMAppService.mainApp.status == .enabled ? .on : .off
+      menu.addItem(launchItem)
     }
     menu.addItem(NSMenuItem.separator())
     let aboutItem = NSMenuItem(title: "About", action: #selector(showAbout), keyEquivalent: "")
@@ -143,6 +149,19 @@ class MenuBarController: NSObject, NSMenuDelegate {
     }
     NSApp.activate(ignoringOtherApps: true)
     aboutWindowController?.showWindow(nil)
+  }
+  
+  @objc private func toggleLaunchAtLogin() {
+    do {
+      if SMAppService.mainApp.status == .enabled {
+        try SMAppService.mainApp.unregister()
+      } else {
+        try SMAppService.mainApp.register()
+      }
+    } catch {
+      print("Failed to toggle launch at login: \(error)")
+    }
+    buildMenu()
   }
   
   @objc private func quitApp() {
